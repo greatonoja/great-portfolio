@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — Healthyfy.io</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+
+  <!-- ADMIN HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="admin.html" class="logo">
+        <img src="../assets/logo.png" alt="Healthyfy Admin" />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="admin.html" class="active">Dashboard</a></li>
+          <li><a href="admin-users.html">Users</a></li>
+          <li><a href="admin-reports.html">Reports</a></li>
+          <li><a href="../server/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ADMIN PANEL -->
+  <main class="container">
+
+    <!-- USER MANAGEMENT -->
+    <section class="admin-section">
+      <h2>Manage Users</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody">
+            <tr>
+              <td>Jane Doe</td>
+              <td>jane@example.com</td>
+              <td>User</td>
+              <td class="action-buttons">
+                <button class="btn warn">Promote</button>
+                <button class="btn danger">Ban</button>
+                <button class="btn neutral">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FLAGGED REPORTS -->
+    <section class="admin-section">
+      <h2>Flagged Content Reports</h2>
+      <div class="report-card">
+        <p><strong>Post ID:</strong> #123 · <strong>Reason:</strong> Inappropriate Language</p>
+        <div class="action-buttons right">
+          <button class="btn primary">Review</button>
+          <button class="btn danger">Delete Post</button>
+          <button class="btn neutral">Dismiss</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Great Onoja — Web Developer</title>
+  <meta name="description" content="Great Onoja - Web Developer. HTML, CSS, JavaScript, PHP, MySQL. I build & manage websites.">
+  <link rel="stylesheet" href="/css/base.Css">
+  <link rel="stylesheet" href="/css/index.css">
+  <style>
+    .btn:hover{
+           color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <!-- header (duplicate across pages for now) -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="logo">GO</span>Great Onojah</a>
+
+      <button class="nav-toggle" aria-label="Open nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+            
+      <nav class="nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" class="btn btn--small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section">
+    <div class="container" style="display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;">
+      <div>
+        <h1 style="font-size: clamp(2rem,4.5vw,3rem); margin-bottom:0.4rem;">Hi, I'm <span style="color:var(--accent)">Great Onojah</span></h1>
+        <p class="lead">Web Developer & Designer crafting modern, responsive, and maintainable websites — HTML, CSS, JavaScript, PHP, MySQL.</p>
+        <div style="margin-top:18px;">
+          <a href="/Healthyfy/frontend/assets/Updated_Resume.pdf" class="btn">Resume</a>
+          <a href="contact.html" style="margin-left:10px;" class="btn btn--outline">Hire Me</a>
+        </div>
+      </div>
+
+      <div style="justify-self:center;">
+        <div style="width:320px;border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 12px 30px rgba(5, 5, 5, 0.45);">
+          <img src="/assets/wow.jpg" alt="Great Onoja portrait" style="width:100%;height:auto;display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+  <div class="container">
+    <div class="feature">
+      <h3>10+ Projects</h3>
+      <p>Real-world projects: landing pages, dashboards, e-commerce UI.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Fast & Accessible</h3>
+      <p>Performance-minded builds, accessible patterns, responsive layouts.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Reliable Maintenance</h3>
+      <p>Ongoing site management, updates, backups & optimizations.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Featured projects (small) -->
+  <section id="featured" class="section">
+    <div class="container">
+      <h2 class="section__title">Featured Projects</h2>
+      <div class="grid cards" style="grid-template-columns:repeat(3,1fr);">
+        <article class="card">
+          <img src="/assets/gig.jpeg" alt="Project 1 screenshot">
+          <div style="padding:14px;">
+            <h3>Healthyfy Dashboard</h3>
+            <p class="lead">Health tracking dashboard with auth, charts and community feed.</p>
+            <div style="margin-top:8px;"><a href="projects.html" class="btn btn--small">View Project</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/assets/sl.jpeg" alt="Project 2 screenshot">
+          <div style="padding:14px;">
+            <h3>Student Management</h3>
+            <p class="lead">CRUD app with MySQL and clean admin flows.</p>
+            <div style="margin-top:8px;"><a href="projects.html" class="btn btn--small">View Project</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/assets/great.jpg" alt="Project 3 screenshot">
+          <div style="padding:14px;">
+            <h3>Portfolio Site</h3>
+            <p class="lead">This site: responsive portfolio template and CMS-ready structure.</p>
+            <div style="margin-top:8px;"><a href="projects.html" class="btn btn--small">View Project</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;">
+      <div>© <span id="year">2025</span> Great Onoja</div>
+      <div><a href="contact.html" class="btn btn--small">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

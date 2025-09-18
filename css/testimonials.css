@@ -1,0 +1,2 @@
+/* css/testimonials.css */
+blockquote { border-left:4px solid var(--accent); background:var(--card); }

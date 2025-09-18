@@ -1,0 +1,73 @@
+/* css/index.css */
+.hero { padding-top: 25px; padding-bottom: 25px; }
+.hero img { display:block; }
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+/* Features Section */
+.features {
+  background-color: #0a0f1a; /* keep your dark background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.features .feature {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;   /* 🔥 Heading white */
+}
+
+.features p {
+  font-size: 16px;
+  color: #ffffff;   /* 🔥 Paragraph white */
+  line-height: 1.6;
+}
+
+}
+/* Features Section */
+.features {
+  background-color: #fbfcfc; /* keep your dark background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.features .feature {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #050404;   /* 🔥 Heading white */
+}
+
+.features p {
+  font-size: 16px;
+  color: #080808;   /* 🔥 Paragraph white */
+  line-height: 1.6;
+}
+

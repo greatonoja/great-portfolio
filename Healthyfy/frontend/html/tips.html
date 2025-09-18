@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Tips — Healthyfy.io</title>
+  <link rel="stylesheet" href="../css/tips.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="../assets/logo.png" alt="Healthyfy Logo" />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="tips.html" class="active">Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="../server/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar">
+    <div class="container filter-btn-group">
+      <a href="./login.html" class="filter-btn active">All</a>
+      <button class="filter-btn">Nutrition</button>
+      <button class="filter-btn">Sleep</button>
+      <button class="filter-btn">Fitness</button>
+      <button class="filter-btn">Mental Health</button>
+      <button class="filter-btn">Hydration</button>
+    </div>
+  </section>
+
+  <!-- TIPS GRID -->
+  <section class="tips-grid">
+    <div class="container tips-cards">
+      
+      <!-- Tip Card -->
+      <div class="tip-card">
+        <h3>Stay Hydrated Daily</h3>
+        <p>Drink at least 2 liters of water every day to maintain optimal body function and skin health.</p>
+        <div class="tag tag-hydration">#Hydration</div>
+      </div>
+
+      <div class="tip-card">
+        <h3>Optimize Sleep Cycles</h3>
+        <p>Maintain a regular sleep schedule and avoid screens 1 hour before bed to improve sleep quality.</p>
+        <div class="tag tag-sleep">#Sleep</div>
+      </div>
+
+      <div class="tip-card">
+        <h3>Eat Whole Foods</h3>
+        <p>Choose whole grains, vegetables, and fruits over processed items to boost energy and immunity.</p>
+        <div class="tag tag-nutrition">#Nutrition</div>
+      </div>
+
+      <!-- More tips injected dynamically -->
+    </div>
+  </section>
+
+</body>
+</html>

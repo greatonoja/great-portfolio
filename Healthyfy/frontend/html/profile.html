@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile — Healthyfy.io</title>
+  <link rel="stylesheet" href="../css/profile.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="../assets/logo.png" alt="Healthyfy Logo" />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
+          <li><a href="/Healthyfy/server/controllers/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PROFILE FORM -->
+  <main class="container profile-section">
+    <div class="form-wrapper">
+      <h2>Account Settings</h2>
+      <form action="../server/controllers/UserController.php" method="POST" enctype="multipart/form-data">
+        
+        <!-- Avatar Upload -->
+        <div class="form-group center">
+          <label for="avatar">Profile Avatar (Optional)</label>
+          <input type="file" id="avatar" name="avatar" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="0" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="nonbinary">Non-Binary</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" name="weight" step="0.1" />
+        </div>
+
+        <div class="form-group center">
+          <a href="change-password.html" class="link-alt">Change Password</a>
+        </div>
+
+        <div class="form-group center">
+          <button type="submit" class="btn-save">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Great Onoja</title>
+  <link rel="stylesheet" href="/css/base.Css">
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="logo">GO</span>Great Onoja</a>
+      <button class="nav-toggle" aria-label="Open nav"><span></span><span></span><span></span></button>
+      <nav class="nav"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a>+234 9123250055</li>
+        <li><a href="about.html">About</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main class="section section--alt">
+    <div class="container" style="max-width:900px;">
+      <h2 class="section__title">Contact Me</h2>
+      <p class="lead">Ready to start a project or just want to say hi? Use the form below and I’ll get back to you within 48 hours.</p>
+
+      <form id="contactForm" class="form" method="POST" action="mailto:you@example.com" enctype="text/plain">
+        <div class="form__row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="form__row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <div style="margin-top:22px; color:var(--muted);">
+        <p>Or email me directly: <a href="mailto:onjagreat444@gmail.com">onjagreat444@gmail.com</a></p>
+        <p>Social: · <a href="#" aria-label="LinkedIn">LinkedIn</a> · Whatsapp: +2349136815590</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container" style="display:flex;justify-content:space-between;padding:12px 0;">
+    <div>© <span id="year-contact">2025</span> Great Onoja</div>
+    <div><a href="index.html">Home</a></div>
+  </div></footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

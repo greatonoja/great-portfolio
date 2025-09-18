@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Skills — Great Onoja</title>
+  <link rel="stylesheet" href="/css/base.Css">
+  <link rel="stylesheet" href="/css/skills.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="logo">GO</span>Great Onoja</a>
+      <button class="nav-toggle" aria-label="Open nav"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <p class="lead">I focus on building clean, maintainable, and accessible front-end code — and pairing it with reliable back-end services.</p>
+
+      <div class="grid" style="grid-template-columns:repeat(2,1fr); gap:18px; margin-top:20px;">
+        <div style="background:var(--card); padding:18px; border-radius:12px;">
+          <h3>Frontend</h3>
+          <ul style="color:var(--muted); margin-top:8px;">
+            <li>HTML5 — semantic markup & SEO best-practices</li>
+            <li>CSS3 — Flexbox, Grid, responsive, SASS basics</li>
+            <li>JavaScript (ES6+) — DOM, fetch, modular code</li>
+            <li>React — component-based UI (intro level)</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--card); padding:18px; border-radius:12px;">
+          <h3>Backend & Tools</h3>
+          <ul style="color:var(--muted); margin-top:8px;">
+            <li>PHP & MySQL — CRUD apps, auth patterns</li>
+            <li>Node.js basics — simple APIs</li>
+            <li>Git / GitHub — version control & PR workflow</li>
+            <li>Deployment — FTP, simple cPanel / shared hosting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="display:flex;justify-content:space-between;padding:12px 0;">
+      <div>© <span id="year-skills">2025</span> Great Onoja</div>
+      <div><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
