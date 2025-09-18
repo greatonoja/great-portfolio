@@ -6,7 +6,9 @@
     { "src": "Healthyfy/frontend/html/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/healthyfy/(.*)", "dest": "/Healthyfy/frontend/html/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "^/healthyfy$", "dest": "/Healthyfy/frontend/html/index.html" },
+    { "src": "^/healthyfy/(.*)$", "dest": "/Healthyfy/frontend/html/$1" },
+    { "src": "^/healthyfy/(.*)$", "has": [{ "type": "query", "key": "_escaped_fragment_" }], "dest": "/Healthyfy/frontend/html/index.html" },
+    { "src": "^/(.*)$", "dest": "/index.html" }
   ]
 }
